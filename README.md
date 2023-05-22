@@ -40,7 +40,7 @@
 <hr></hr>
 <p>1. С помощью инструмента для загрузки из удаленного репозитория, разместим исходные файлы в удобный каталог. <a href="https://github.com/Sereys13/search_engine/tree/main">Ссылка на репозиторий</a> </p>
 <p><img src="img_4.png" width="500" height="500"></p>
-<p>2. В настройках Cmake для слинковки библиотек в исполняемый файл добавим</p>
+<p>2. В настройках Cmake для линковки библиотек в исполняемый файл добавим</p>
 <p><mark>-D CMAKE_EXE_LINKER_FLAGS="-static-libgcc -static-libstdc++"</mark></p>
 <p><img src="img_6.png"></p>
 <p>3. Выполняем сборку проекта, сформировываем исполняемый файл search_engine.exe </p>
