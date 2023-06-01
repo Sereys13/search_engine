@@ -17,7 +17,7 @@ class ConverterJSON {
 private:
     nlohmann::json objJson;
     std::fstream fileInput;
-    int ResponsesLimit = 5;
+    int responsesLimit = 5;
 
 public:
     ConverterJSON() = default;

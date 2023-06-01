@@ -59,11 +59,11 @@ void ConverterJSON::checkFileConfigJSON() {
     if (objJson["config"]["version"] != VERSION_APP)
         throw "Error. config.json has incorrect file version";
     if(objJson["config"].count("max_responses"))
-        ResponsesLimit = objJson["config"]["max_responses"];
+        responsesLimit = objJson["config"]["max_responses"];
     std::cout << objJson["config"]["name"] <<" starting. Version "<< objJson["config"]["version"] << std::endl;
 }
 
 /* Запрос ResponsesLimit*/
 int ConverterJSON::GetResponsesLimit() const {
-    return ResponsesLimit;
+    return responsesLimit;
 }
